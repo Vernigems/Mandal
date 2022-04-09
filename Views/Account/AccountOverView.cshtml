@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "AccountOverView";
+}
+<!-- Recent Sales -->
+<div class="col-12">
+    <div class="card recent-sales overflow-auto">
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h5 class="card-title ">Account Over View</h5>
+                </div>
+            </div>
+            <table class="table table-borderless datatable">
+                <thead>
+                    <tr>
+                        <th scope="col">Month</th>
+                        <th scope="col">EMI</th>
+                        <th scope="col">Int</th>
+                        <th scope="col">Debit</th>
+                        <th scope="col">Credit</th>
+                        <th scope="col">Fine</th>
+                        <th scope="col">Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jan</td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                    <tr>
+                        <td>Feb </td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                    <tr>
+                        <td>Mar </td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                    <tr>
+                        <td>Mar </td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                    <tr>
+                        <td>Mar </td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                    <tr>
+                        <td>Mar </td>
+                        <td>1000</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div><!-- End Recent Sales -->
+
+<script>
+    function AddEmi() {
+        $("#AddEmi").modal('show');
+        $("#NickName").val(getParameterByName("NickName"))
+        $("#MemberId").val(getParameterByName("MemberId"))
+    }
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+</script>
+
+

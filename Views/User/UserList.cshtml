@@ -1,0 +1,83 @@
+﻿@model List<UserDetailModel>
+<!-- Recent Sales -->
+<div class="col-12">
+    <div class="card recent-sales overflow-auto">
+
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <h5 class="card-title">User List</h5>
+                </div>
+                <div class="col-sm-7 mt-4">
+                    <div style="float:right">
+                        <a href="~/user" class="btn btn-outline-success"><i class="bi bi-plus-circle-fill"></i> Add Member</a>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-borderless datatable">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">EMI</th>
+                        <th scope="col">Debit</th>
+                        <th scope="col">Credit</th>
+                        <th scope="col">Last EMI</th>
+                        <th scope="col">Int</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        if (Model != null)
+                        {
+
+
+                            foreach (var item in Model)
+                            {
+                                           <tr>
+                                               <td class=d-none>
+                                        @item.MemberId
+                                               </td>
+                                               <td><a href='~/account/AccountDetail?NickName=@item.NickName&MemberId=@item.MemberId' class="text-primary">@item.NickName</a></td>
+                                               <td>@item.TotalEMI</td>
+                                               <td>@item.TotalDebit</td>
+                                               <td>@item.TotalCredit</td>
+                                               <td>@item.LastMonth</td>
+                                               <td>@item.Intrest</td>
+                                               <td><span class="badge bg-success">Active</span></td>                                            
+                                               <td>
+                                                   <a href="#" class="text-primary" onclick='AddEmi(@item.MemberId," @item.NickName")'><i class="bi bi-plus-circle-fill"> </i> Emi</a> &nbsp;
+                                                   <a href="/user"><i class="bi bi-pencil-square"></i></a>
+                                               </td>
+                                           </tr>
+                            }
+                        }
+                        else
+                        {
+                                    <tr>
+                                        <td colspan="5">
+                                            <p class="text-center">
+                                                No Record Available
+                                            </p>
+                                        </td>
+                                    </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div><!-- End Recent Sales -->
+<!-- Script Section -->
+<script>
+    function AddEmi(id, NickName) {        
+        $("#AddEmi").modal('show');
+        $("#NickName").val(NickName)    
+        $("#MemberId").val(id)
+    }
+
+</script>
+<!-- Script Section -->
