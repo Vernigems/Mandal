@@ -6754,11 +6754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin1\\Source\\Repos\\NewRepo\\Mandal.csproj",
+      "projectUniqueName": "C:\\Users\\admin1\\source\\repos\\Mandal\\Mandal.csproj",
       "projectName": "Mandal",
-      "projectPath": "C:\\Users\\admin1\\Source\\Repos\\NewRepo\\Mandal.csproj",
+      "projectPath": "C:\\Users\\admin1\\source\\repos\\Mandal\\Mandal.csproj",
       "packagesPath": "C:\\Users\\admin1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin1\\Source\\Repos\\NewRepo\\obj\\",
+      "outputPath": "C:\\Users\\admin1\\source\\repos\\Mandal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin1\\AppData\\Roaming\\NuGet\\NuGet.Config",

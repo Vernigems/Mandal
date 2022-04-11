@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYFVJ1CRGe6TlEPNWK3hO7a2FtYnWoge/yuvnEJ8w67rznPN2bPfMaJIY+lxBGnfXh+BEvmpKJf/tkwD/oom4A==",
+  "dgSpecHash": "z9C91plpDXCJzlJcSUB0QPRPEvmteB71n9z60p0ll8HR/EtksT3VN4MND9oscin+qI4W5nw5QU2rY9jlCWhlGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin1\\Source\\Repos\\NewRepo\\Mandal.csproj",
+  "projectFilePath": "C:\\Users\\admin1\\source\\repos\\Mandal\\Mandal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin1\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\admin1\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
