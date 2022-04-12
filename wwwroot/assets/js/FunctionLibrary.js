@@ -7,6 +7,7 @@
     GetUserNameAccountDetail();
 
     $("#AddEditSave").click(function () {        
+        //event.preventDefault();
         var emailData = $("#emiAddEditForm").serialize();
         
         if ($("#emiAddEditForm")[0].checkValidity()) {
@@ -18,11 +19,20 @@
                 beforeSend: function () {
                     //$('.div-loader').removeAttr('hidden');
                 },
-                success: function (data) {                    
-                    if (data > 0)
-                        $.toast('Success', 'Record Add/Edit Successfully.');
-                    else
-                        $.toast('warning', 'Emi Already add.');                        
+                success: function (data) {
+
+                    if (data > 0) {
+                        setTimeout(function () {
+                            $.toast('success', 'Record Add/Edit Successfully1.');
+                        }, 1000);
+                        $.toast('success', 'Record Add/Edit Successfully2.');
+                    }
+                    else {
+                        setTimeout(function () {
+                            $.toast('warning', $("#emiAddEditForm").serializeArray()[3].value + ' Emi Already add.');
+                        }, 1000);
+                    }
+                        
 
                     $("#AddEmi").modal('hide');
                     //window.location.reload;
@@ -36,7 +46,7 @@
                 }
             });
         }
-        
+
     })
 });
 

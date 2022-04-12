@@ -25,7 +25,7 @@
                         <th scope="col">Credit</th>
                         <th scope="col">Last EMI</th>
                         <th scope="col">Int</th>
-                        <th scope="col">Status</th>
+                        <th scope="col">NextPay</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -37,33 +37,33 @@
 
                             foreach (var item in Model)
                             {
-                                           <tr>
-                                               <td class=d-none>
+                                <tr>
+                                    <td class=d-none>
                                         @item.MemberId
-                                               </td>
-                                               <td><a href='~/account/AccountDetail?NickName=@item.NickName&MemberId=@item.MemberId' class="text-primary">@item.NickName</a></td>
-                                               <td>@item.TotalEMI</td>
-                                               <td>@item.TotalDebit</td>
-                                               <td>@item.TotalCredit</td>
-                                               <td>@item.LastMonth</td>
-                                               <td>@item.Intrest</td>
-                                               <td><span class="badge bg-success">Active</span></td>                                            
-                                               <td>
-                                                   <a href="#" class="text-primary" onclick='AddEmi(@item.MemberId," @item.NickName")'><i class="bi bi-plus-circle-fill"> </i> Emi</a> &nbsp;
-                                                   <a href="/user"><i class="bi bi-pencil-square"></i></a>
-                                               </td>
-                                           </tr>
+                                    </td>
+                                    <td><a href='~/account/AccountDetail?NickName=@item.NickName&MemberId=@item.MemberId' class="text-primary">@item.NickName</a></td>
+                                    <td>@item.TotalEMI</td>
+                                    <td>@item.TotalDebit</td>
+                                    <td>@item.TotalCredit</td>
+                                    <td>@item.LastMonth</td>
+                                    <td>@item.Intrest</td>
+                                    <td>@item.NextPay</td>
+                                    <td>
+                                        <a href="#" class="text-primary" onclick='AddEmi(@item.MemberId," @item.NickName")'><i class="bi bi-plus-circle-fill"> </i> Emi</a> &nbsp;
+                                        <a href="/user"><i class="bi bi-pencil-square"></i></a>
+                                    </td>
+                                </tr>
                             }
                         }
                         else
                         {
-                                    <tr>
-                                        <td colspan="5">
-                                            <p class="text-center">
-                                                No Record Available
-                                            </p>
-                                        </td>
-                                    </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <p class="text-center">
+                                        No Record Available
+                                    </p>
+                                </td>
+                            </tr>
                         }
                     }
                 </tbody>
@@ -73,9 +73,9 @@
 </div><!-- End Recent Sales -->
 <!-- Script Section -->
 <script>
-    function AddEmi(id, NickName) {        
+    function AddEmi(id, NickName) {
         $("#AddEmi").modal('show');
-        $("#NickName").val(NickName)    
+        $("#NickName").val(NickName)
         $("#MemberId").val(id)
     }
 

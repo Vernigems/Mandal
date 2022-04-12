@@ -30,9 +30,10 @@ namespace Mandal.Controllers
 
             foreach (var userwModel1 in  userwModel)
             {
-                userwModel1.Intrest = Convert.ToInt64(userwModel1.TotalDebit) * 1.5 / 100;
-
+                userwModel1.Intrest = (Convert.ToInt64(userwModel1.TotalDebit) * 1.5 / 100);
+                userwModel1.NextPay = userwModel1.Intrest + 1000; 
                 userwModel.Where(w => w.MemberId == userwModel1.MemberId).Select(s => { s.Intrest = userwModel1.Intrest; return s; }).ToList();
+                userwModel.Where(w => w.MemberId == userwModel1.MemberId).Select(s => { s.NextPay = userwModel1.NextPay; return s; }).ToList();
             }
 
             return View(userwModel);

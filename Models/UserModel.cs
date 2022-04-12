@@ -24,6 +24,7 @@ namespace Mandal.Models
         public string TotalEMI { get; set; }
         public string TotalDebit { get; set; }
         public string TotalCredit { get; set; }
+        public double NextPay { get; set; }
         public string address { get; set; }
         public string LastMonth { get; set; }
         public double Intrest { get; set; }        
