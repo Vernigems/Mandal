@@ -53,7 +53,6 @@ namespace Mandal.Controllers
                                                 ("@RefMobile", UserModel.refMobile),
                                                 ("@CreatedBy", "Admin")
                                                 );
-
             return Redirect("/Index");
         }
     }

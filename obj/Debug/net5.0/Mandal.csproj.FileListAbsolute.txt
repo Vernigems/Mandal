@@ -1236,7 +1236,12 @@ C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.RazorTargetAssemblyI
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.Views.pdb
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.csproj.CopyComplete
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.dll
-C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\refint\Mandal.dll
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.pdb
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\Mandal.genruntimeconfig.cache
 C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\ref\Mandal.dll
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\staticwebassets\Mandal.StaticWebAssets.Pack.cache
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\staticwebassets\msbuild.Mandal.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\staticwebassets\msbuild.build.Mandal.props
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Mandal.props
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Mandal.props
+C:\Users\admin1\source\repos\Mandal\obj\Debug\net5.0\refint\Mandal.dll
